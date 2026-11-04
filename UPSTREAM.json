@@ -1,0 +1,8 @@
+{
+  "repository": "https://github.com/m-vave/fm1_open.git",
+  "commit": "4c7496daac04a95ff10d1afdcc8f9ead2dbabc41",
+  "directory": "firmware",
+  "release": "FM1 Open V14",
+  "modified_files": ["app/screen.c"],
+  "license": "See firmware/LICENSE.md and firmware/THIRD_PARTY.md"
+}

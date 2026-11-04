@@ -1,0 +1,24 @@
+name: C simulator and interface tests
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  simulator:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: python3 tools/setup_wasi.py
+      - run: python3 tools/check.py --wasi-sdk build/tools/wasi-sdk-27.0-x86_64-linux
+      - uses: actions/upload-artifact@v4
+        with:
+          name: fm1-local-preview
+          path: build/preview/

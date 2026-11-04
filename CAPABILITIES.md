@@ -4,6 +4,8 @@ Source: user-supplied `FM-1-manual.pdf`, titled *Detailed User Manual — FM-1 S
 
 All rows below are **documented, not device-verified**. Tests describe future acceptance work. The manual is reference material, not authorization to reset, overwrite, or flash the owner's device.
 
+Current source comparison and simulator validation are recorded separately in [FEATURE_AUDIT.md](FEATURE_AUDIT.md). This manual inventory remains the preservation target, including functions missing or different in the official open base.
+
 ## Controls and performance
 
 | Capability to preserve | Documented behavior | Source | Future verification |
